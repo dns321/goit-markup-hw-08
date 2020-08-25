@@ -1,0 +1,51 @@
+/*Стилі героя*/
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* outline: 2px solid tomato; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1600px;
+
+  background-image: linear-gradient(to right, $bd-hero, $bd-hero),
+    url(../images/Header.jpg);
+  background-color: $bg-footer;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.section {
+  /* outline: 2px solid tomato; */
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $secondary-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section.feature {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero-title,
+.button.primary,
+.works-title {
+  letter-spacing: 0.06em;
+}

@@ -1,0 +1,43 @@
+/*Стилі команди*/
+.section.team {
+  background-color: $secondary-bg-color;
+}
+
+.team-items {
+  display: flex;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team-title,
+.team-text,
+.work-list-title {
+  text-align: center;
+}
+
+.team-img {
+  display: block;
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.work-list-title,
+.footer-title {
+  color: $secondary-color;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}

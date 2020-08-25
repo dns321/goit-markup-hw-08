@@ -1,0 +1,27 @@
+/*Стилі робіт*/
+.work-list {
+  display: flex;
+}
+
+.work-list-items {
+  position: relative;
+
+  width: calc((100% - (2 * 30px) / 3));
+}
+
+.work-list-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  margin-top: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background: $bg-text;
+}
+
+.work-list-img {
+  display: block;
+}

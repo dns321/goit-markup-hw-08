@@ -1,0 +1,24 @@
+/*Стилі Логотипу*/
+.header-nav-logo,
+.footer-nav-logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  color: $titel-text-color;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-web {
+  color: $accent-color;
+}
+
+.footer-nav-logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: $secondary-color;
+  /* outline: 2px solid tomato; */
+}

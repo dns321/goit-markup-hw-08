@@ -1,0 +1,37 @@
+/*СТилы переваг*/
+.feature-list-title,
+.work-list-title,
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-list-text,
+.footer-adress,
+.agreement {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.background-feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: $secondary-bg-color;
+}
+
+.section-title-feature {
+  position: absolute;
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.feature-list {
+  display: flex;
+  padding-top: 94px;
+}

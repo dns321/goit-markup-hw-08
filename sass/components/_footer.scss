@@ -1,0 +1,71 @@
+/*Cnbks aenthf*/
+
+.address-text {
+  margin-top: 0;
+
+  color: $secondary-color;
+}
+
+.address-mail,
+.address-phone {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-elements.address {
+  margin-right: 69px;
+}
+
+.address-mail,
+.address-text {
+  margin-bottom: 9px;
+
+  /* outline: 2px solid tomato; */
+}
+
+.address-phone {
+  margin-bottom: 60px;
+}
+
+.container.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-title {
+  /* outline: 2px solid tomato; */
+}
+
+.subscription {
+  margin-left: 93px;
+}
+
+.footer-submit-svg {
+  position: relative;
+  top: 6px;
+  left: 10px;
+  fill: currentColor;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-submit {
+  height: 50px;
+  width: 358px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+  background-color: transparent;
+}
+
+.footer-elements input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
