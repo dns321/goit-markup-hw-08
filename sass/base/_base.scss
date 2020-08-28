@@ -16,6 +16,11 @@ body {
   font-family: $base-font;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
 
 footer {
   background-color: $bg-footer;
