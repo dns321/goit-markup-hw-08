@@ -1,27 +1,32 @@
 /*Стилі клієнтів*/
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-.icon-client {
-  fill: currentColor;
+.client-item {
+  width: calc((100% - (4 * 15px)) / 2);
+  text-align: center;
+  margin: 15px;
 }
 
 .client-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid $color-social;
   color: $color-social;
+  transition: $animation;
 
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    border: 1px solid $accent-color;
-  }
+  //   &:hover,
+  //   &:focus {
+  //     color: $accent-color;
+  //     border: 1px solid $accent-color;
+  //   }
+}
+
+.icon-client {
+  fill: currentColor;
 }

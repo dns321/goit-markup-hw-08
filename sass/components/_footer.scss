@@ -1,8 +1,25 @@
 /*Cnbks aenthf*/
+.footer {
+  text-align: center;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.footer-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
 
 .address-text {
   margin-top: 0;
-
   color: $secondary-color;
 }
 
@@ -13,32 +30,24 @@
   text-decoration: none;
 }
 
-.footer-elements.address {
-  margin-right: 69px;
-}
-
 .address-mail,
 .address-text {
-  margin-bottom: 9px;
-
-  /* outline: 2px solid tomato; */
+  margin-bottom: 8px;
 }
 
 .address-phone {
   margin-bottom: 60px;
 }
 
-.container.footer {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-title {
-  /* outline: 2px solid tomato; */
-}
-
-.subscription {
-  margin-left: 93px;
+.footer-submit {
+  height: 50px;
+  width: 434px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  // margin-right: 12px;
+  background-color: transparent;
 }
 
 .footer-submit-svg {
@@ -46,21 +55,6 @@
   top: 6px;
   left: 10px;
   fill: currentColor;
-}
-
-.form-footer {
-  display: flex;
-  align-items: center;
-}
-
-.footer-submit {
-  height: 50px;
-  width: 358px;
-  padding-left: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  margin-right: 12px;
-  background-color: transparent;
 }
 
 .footer-elements input::placeholder {

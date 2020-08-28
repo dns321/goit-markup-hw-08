@@ -1,27 +1,36 @@
 /*СТилы переваг*/
-.feature-list-title,
-.work-list-title,
-.footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
+.feature-list {
+  padding: 60px 0;
 
-.feature-list-text,
-.footer-adress,
-.agreement {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .background-feature-icon {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
+  margin-bottom: 30px;
   background-color: $secondary-bg-color;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.feature-list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .section-title-feature {
@@ -31,7 +40,14 @@
   margin-bottom: 0;
 }
 
-.feature-list {
-  display: flex;
-  padding-top: 94px;
+.feature-list-title {
+  @extend %title;
+}
+
+.feature-list-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }

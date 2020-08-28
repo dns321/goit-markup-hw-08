@@ -1,8 +1,13 @@
 /* Оформлення соц мереж */
+
 .team-social,
 .footer-social {
   display: flex;
   justify-content: center;
+}
+
+.social-link {
+  fill: currentColor;
 }
 
 .team-social-inst,
@@ -14,31 +19,31 @@
   margin-right: 10px;
 }
 
-.social-link {
-  fill: currentColor;
+.team-social-item {
+  @extend %social-stile;
+  //   &:hover,
+  //   &:focus {
+  //     background-color: $accent-color;
+  //     color: $secondary-color;
+  //   }
 }
 
 .footer-social-item {
   @extend %social-stile;
-}
-
-.team-social-item {
-  @extend %social-stile;
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    color: $secondary-color;
-  }
 }
 
 .footer-social-item {
   background-color: $bg-soc-footer;
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
+  //   &:hover,
+  //   &:focus {
+  //     background-color: $accent-color;
+  //   }
 }
 
 .social-link-footer {
   fill: $secondary-color;
+}
+
+.footer-social {
+  margin-bottom: 60px;
 }
