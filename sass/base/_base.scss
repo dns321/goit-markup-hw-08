@@ -15,7 +15,11 @@ body {
   color: $primary-text-color;
   font-family: $base-font;
   letter-spacing: 0.03em;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
+
 h1,
 h2,
 h3 {

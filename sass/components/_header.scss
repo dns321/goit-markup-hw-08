@@ -2,23 +2,57 @@
 /* Site nav  */
 .menu-button {
   position: relative;
-  left: 274px;
-  top: 24px;
-  display: inline-block;
+  left: 270px;
+  top: 12px;
+  display: inline-flex;
   margin: 10px 15px 10px 0;
   padding: 0;
   border: none;
   background-color: transparent;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
-.menu-button .icon-close {
-  display: none;
+.page-header {
+  position: relative;
 }
 
-.menu-button.is-open .icon-close {
-  display: block;
+.menu-mobile {
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    background-color: $secondary-color;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
 }
 
-.menu-button.is-open .icon-menu {
-  display: none;
+.сentering {
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
 }
