@@ -41,8 +41,9 @@
 }
 
 .footer-submit {
+  box-sizing: border-box;
   height: 50px;
-  width: 434px;
+  width: 100%;
   padding-left: 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
