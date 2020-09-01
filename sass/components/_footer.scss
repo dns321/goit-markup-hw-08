@@ -1,6 +1,7 @@
 /*Cnbks aenthf*/
 .footer {
   text-align: center;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -37,7 +38,9 @@
 }
 
 .address-phone {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-submit {
@@ -64,4 +67,30 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tablet {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+.footer-elements.address {
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-right: 69px;
+  }
+}
+
+.footer-elements {
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

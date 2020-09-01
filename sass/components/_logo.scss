@@ -10,6 +10,11 @@
   line-height: 1.2;
   text-decoration: none;
   color: $titel-text-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .logo-web {
@@ -17,7 +22,6 @@
 }
 
 .footer-nav-logo {
-  margin-top: 60px;
   margin-bottom: 20px;
   color: $secondary-color;
   /* outline: 2px solid tomato; */

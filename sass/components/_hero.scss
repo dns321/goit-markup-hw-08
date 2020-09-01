@@ -10,10 +10,36 @@
   height: 400px;
 
   background-image: linear-gradient(to right, $bd-hero, $bd-hero),
-    url(../images/Header_mobile.jpg);
+    url(../images/Header_mobile@1x.jpg);
   background-color: $bg-footer;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/Header_mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/Header_tablet@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/Header_tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/Header_desctop@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/Header_desctop@2x.jpg);
+    }
+  }
 }
 
 .hero-title {
