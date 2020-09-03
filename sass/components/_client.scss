@@ -13,6 +13,10 @@
   @media screen and (min-width: $tablet) {
     width: calc((100% - (6 * 15px)) / 3);
   }
+
+  @media screen and (min-width: $desctop) {
+    width: calc((100% - (12 * 15px)) / 6);
+  }
 }
 
 .client-item-link {
@@ -24,11 +28,13 @@
   color: $color-social;
   transition: $animation;
 
-  //   &:hover,
-  //   &:focus {
-  //     color: $accent-color;
-  //     border: 1px solid $accent-color;
-  //   }
+  @media screen and (min-width: $desctop) {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
 }
 
 .icon-client {

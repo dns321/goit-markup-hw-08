@@ -85,6 +85,11 @@ footer {
   margin-bottom: 0;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section.feature {

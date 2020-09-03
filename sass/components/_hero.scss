@@ -52,6 +52,10 @@
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: $desctop) {
+    font-size: 44px;
+  }
 }
 
 .hero-title,

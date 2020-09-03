@@ -63,6 +63,11 @@
     // display: flex;
     margin-left: 88px;
   }
+
+  @media screen and (min-width: $desctop) {
+    // display: flex;
+    margin-left: 93px;
+  }
 }
 
 .site-nav-item {
@@ -83,21 +88,34 @@
       margin-right: 84px;
     }
   }
+
+  @media screen and (min-width: $desctop) {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .contact-nav-item {
-  margin-top: 60px;
-  &:last-child {
-    margin-top: 16px;
-    margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    &:last-child {
+      margin-top: 16px;
+      margin-bottom: 60px;
+    }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
     margin-top: 21px;
-    // margin-bottom: 0;
     &:last-child {
       margin-top: 10px;
       margin-bottom: 21px;
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    &:first-child {
+      margin-right: 30px;
     }
   }
 }
@@ -134,8 +152,6 @@
 }
 
 .contact-link {
-  // display: flex;
-  // align-items: center;
   color: $primary-text-color;
   text-decoration: none;
   transition: $animation;
@@ -147,6 +163,27 @@
 
   @media screen and (min-width: $tablet) and (max-width: 1599px) {
     font-size: 12px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.icon-mail {
+  margin-right: 10px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    margin-right: 8px;
+  }
+}
+
+.icon-tel {
+  margin-right: 10px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    margin-right: 8px;
   }
 }
 
@@ -175,7 +212,13 @@
 
   @media screen and (min-width: $tablet) {
     &::after {
-      bottom: -3px;
+      bottom: -1px;
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    &::after {
+      bottom: 0;
     }
   }
 }
@@ -186,4 +229,12 @@
   position: absolute;
   left: 0;
   width: 100%;
+  z-index: -1;
+}
+
+.contact-nav {
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    margin-left: 305px;
+  }
 }

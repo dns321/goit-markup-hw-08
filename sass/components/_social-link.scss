@@ -21,11 +21,14 @@
 
 .team-social-item {
   @extend %social-stile;
-  //   &:hover,
-  //   &:focus {
-  //     background-color: $accent-color;
-  //     color: $secondary-color;
-  //   }
+
+  @media screen and (min-width: $desctop) {
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $secondary-color;
+    }
+  }
 }
 
 .footer-social-item {
@@ -34,10 +37,13 @@
 
 .footer-social-item {
   background-color: $bg-soc-footer;
-  //   &:hover,
-  //   &:focus {
-  //     background-color: $accent-color;
-  //   }
+
+  @media screen and (min-width: $desctop) {
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
 }
 
 .social-link-footer {
