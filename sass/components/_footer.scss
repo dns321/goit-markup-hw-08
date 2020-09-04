@@ -3,6 +3,10 @@
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop) {
+    text-align: start;
+  }
 }
 
 .footer-title {

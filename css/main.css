@@ -711,6 +711,7 @@ footer {
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: 480px 400px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -722,6 +723,7 @@ footer {
 @media screen and (min-width: 481px) {
   .hero {
     background-image: url(../images/Header_tablet@1x.jpg);
+    background-size: 768px 400px;
   }
 }
 
@@ -734,6 +736,7 @@ footer {
 @media screen and (min-width: 769px) {
   .hero {
     background-image: url(../images/Header_desctop@1x.jpg);
+    background-size: 1600px 600px;
     height: 600px;
   }
 }
@@ -1584,6 +1587,12 @@ textarea {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+  .footer {
+    text-align: start;
+  }
 }
 
 .footer-title {
