@@ -909,6 +909,10 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
@@ -922,12 +926,6 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-@media screen and (min-width: 1600px) {
-  .form {
-    width: 448px;
-  }
 }
 
 .form-field {
