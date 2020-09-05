@@ -738,6 +738,7 @@ footer {
     background-image: url(../images/Header_desctop@1x.jpg);
     background-size: 1600px 600px;
     height: 600px;
+    max-width: 1600px;
   }
 }
 
